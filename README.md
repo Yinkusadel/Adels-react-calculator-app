@@ -21,13 +21,26 @@
 - Clone the project
 
 ```bash
-git clone git@github.com:Yinkusadel/Adels-react-calculator-app.git
+git clone git@github.com:Yinkusadel/react-calculator-app.git
 ```
 
 - Install Dependencies
 
 ```bash
 yarn install
+```
+
+- Starting the development server
+
+```bash
+yarn dev
+```
+
+- Running a production build
+
+```bash
+yarn build
+yarn preview
 ```
 
 To run StyleLint by itself, you may run the lint task:
@@ -78,6 +91,12 @@ To generate an accessibility report for this webpage, run the below command, it 
 yarn axe
 ```
 
+- Run test using the following command:
+
+```bash
+yarn test
+```
+
 ## Style Guides
 
 - [CSS Style Guide](http://udacity.github.io/frontend-nanodegree-styleguide/css.html)
@@ -110,3 +129,18 @@ Give a ⭐️ if you like this project!
 ## 📝 License
 
 [MIT licensed](./LICENSE).
+
+## Initial Setup
+
+Are you intrested how the initial template is setup? Check below for steps and resources.
+
+- The template is built with the `create vite` command `yarn create vite js-vite-template --template vanilla` from [the setup guide on vite](https://vitejs.dev/guide/#scaffolding-your-first-vite-project)
+
+- Tailwind is setup with the command `yarn add -D tailwindcss postcss autoprefixer` and `npx tailwindcss init -p`, see [the offical tailwind guide for details](https://tailwindcss.com/docs/guides/vite)
+
+The template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+
+Currently, two official plugins are available:
+
+- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
+- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
