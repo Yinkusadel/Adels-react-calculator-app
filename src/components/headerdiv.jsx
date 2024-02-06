@@ -20,7 +20,7 @@ const HeaderDiv = () => {
           </div>
           <div class="theme-inputs flex h-6 w-16 items-center justify-between rounded-lg bg-themeOne-mobile-radio-input-background ">
             <input
-              class="themeOne duration-200checked h-4 w-4 cursor-pointer appearance-none rounded-full transition-all checked:bg-themeOne-mobile-radio-input-checked "
+              class="themeOne duration-200checked h-4 w-4 cursor-pointer appearance-none rounded-full transition-all checked:bg-themeOne-mobile-radio-input-checked checked:hover:bg-themeOne-mobile-radio-input-checked-hover "
               id="theme-choice-one"
               name="theme"
               type="radio"
@@ -28,14 +28,14 @@ const HeaderDiv = () => {
               checked
             />
             <input
-              class="themeTwo h-4 w-4 cursor-pointer appearance-none rounded-full transition-all duration-200 checked:bg-themeTwo-mobile-radio-input-checked"
+              class="themeTwo h-4 w-4 cursor-pointer appearance-none rounded-full transition-all duration-200 checked:bg-themeTwo-mobile-radio-input-checked checked:hover:bg-themeTwo-mobile-radio-input-checked-hover"
               id="theme-choice-two"
               name="theme"
               type="radio"
               value="themeTwo"
             />
             <input
-              class="themeThree h-4 w-4 cursor-pointer appearance-none rounded-full transition-all duration-200 checked:bg-themeThree-mobile-radio-input-checked"
+              class="themeThree h-4 w-4 cursor-pointer appearance-none rounded-full transition-all duration-200 checked:bg-themeThree-mobile-radio-input-checked checked:hover:bg-themeThree-mobile-radio-input-checked-hover"
               id="theme-choice-three"
               name="theme"
               type="radio"
