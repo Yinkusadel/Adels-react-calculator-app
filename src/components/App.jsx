@@ -1,7 +1,9 @@
+import ContainerDivs from './calculatorcontainers';
+
 const App = () => {
   return (
     <>
-      <h1>Lets build a calculator App</h1>
+      <ContainerDivs />
     </>
   );
 };
