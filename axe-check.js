@@ -23,7 +23,7 @@ async function buildAndServe() {
 
   console.info('Previewing the project...');
   // Execute the preview command (e.g., yarn preview)
-  const serveProcess = spawn('yarn', ['preview']);
+  const serveProcess = spawn('yarn', ['preview'], { shell: true });
 
   // Capture the output of the preview process
   let serveOutput = '';
@@ -127,3 +127,4 @@ await buildAndServe();
 
 fs.writeFileSync('accessibility_report.md', report, 'utf8');
 console.info('Accessibility report generated.');
+process.exit();
