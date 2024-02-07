@@ -1,5 +1,5 @@
 import HeaderDiv from './headerdiv';
-import UserInputs from './userinput';
+import UserDisplay from './userdisplay';
 import UserButtons from './userbuttons';
 
 const ContainerDivs = () => {
@@ -8,7 +8,7 @@ const ContainerDivs = () => {
       <div className="calculator-container flex min-h-screen w-[300px] items-center">
         <div className="calculator-mainbody min-h-[90vh] w-[300px]">
           <HeaderDiv />
-          <UserInputs />
+          <UserDisplay />
           <UserButtons />
         </div>
       </div>
