@@ -1,6 +1,6 @@
-import Button from './defaultbtn';
+import Button from './Button';
 
-const UserButtons = () => {
+const ButtonContainer = () => {
   return (
     <div class="user-butns h-[65vh]">
       <div class="calculator-btns mt-5 w-[300px] rounded-lg bg-themeOne-mobile-button-background p-5 ">
@@ -46,4 +46,4 @@ const UserButtons = () => {
   );
 };
 
-export default UserButtons;
+export default ButtonContainer;
