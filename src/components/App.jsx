@@ -1,5 +1,5 @@
 import Header from './Header';
-import UserDisplay from './UserDisplay';
+import UserDisplay from './UserDisplay1';
 import ButtonContainer from './ButtonContainer';
 
 const App = () => {
