@@ -12,7 +12,7 @@
     "build": "vite build",
     "preview": "vite preview --strictPort --port 8080",
     "format": "npx prettier --write \"**/*.{html,json,md,yaml,yml,cjs,jsx,js,css}\" --cache --cache-location node_modules/.cache/.prettiercache --ignore-path .gitignore",
-    "format:check": "npx prettier --check \"**/*.{html,json,md,yaml,yml}\" --cache --cache-location node_modules/.cache/.prettiercache --ignore-path .gitignore",
+    "format:check": "npx prettier --check \"**/*.{html,json,md,jsx,yaml,yml}\" --cache --cache-location node_modules/.cache/.prettiercache --ignore-path .gitignore",
     "lint": "yarn stylelint & yarn eslint",
     "lint:check": "yarn stylelint:check & yarn eslint:check",
     "stylelint": "npx stylelint \"**/*.css\" --fix --cache --cache-location node_modules/.cache/.stylelintcache",
