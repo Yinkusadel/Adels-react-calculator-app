@@ -1,4 +1,4 @@
-const themes = [
+const Themes = [
   { id: 'theme-choice-one', value: '1' },
   { id: 'theme-choice-two', value: '2' },
   { id: 'theme-choice-three', value: '3' },
@@ -12,14 +12,4 @@ const Label = ({ value, htmlFor }) => {
   );
 };
 
-const LabelSelector = () => {
-  return (
-    <>
-      {themes.map((theme) => (
-        <Label key={theme.id} value={theme.value} htmlFor={theme.id} />
-      ))}
-    </>
-  );
-};
-
-export default LabelSelector;
+export { Themes, Label };

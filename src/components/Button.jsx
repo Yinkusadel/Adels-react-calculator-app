@@ -1,10 +1,10 @@
 const Button = ({
   value,
-  style = 'h-12 w-1/5 rounded bg-themeOne-mobile-button-keys-background text-3xl text-themeOne-mobile-button-keys-color shadow-ash hover:bg-themeOne-mobile-button-keys-background-hover active:translate-y-1',
+  style = 'h-12 w-1/5 rounded bg-themeOne-80 text-3xl text-themeOne-100 shadow-ash hover:bg-themeOne-90 active:translate-y-1',
 }) => {
   return (
     <>
-      <button className={style} type="button">
+      <button className={style} type="button" value={value}>
         {value}
       </button>
     </>
