@@ -1,9 +1,9 @@
-const Input = ({ id, name = 'theme', value, checked, className }) => {
+const Input = ({ id, value, checked, className }) => {
   return (
     <input
       className={`'duration-200 h-4 w-4 cursor-pointer appearance-none rounded-full transition-all'${className}`}
       id={id}
-      name={name}
+      name="theme"
       type="radio"
       value={value}
       checked={checked}
