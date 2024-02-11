@@ -9,7 +9,7 @@ const App = () => {
         <div className=" flex min-h-screen w-[300px] items-center">
           <div className=" min-h-[90vh] w-[300px]">
             <Header />
-            <UserDisplay value={0} />
+            <UserDisplay value={'399,981'} />
             <ButtonContainer />
           </div>
         </div>
