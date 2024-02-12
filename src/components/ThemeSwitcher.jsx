@@ -6,7 +6,6 @@ const labelInput = [
     id: 'theme-choice-one',
     value: '1',
     className: 'checked checked:bg-themeOne-30 checked:hover:bg-themeOne-40',
-
     checked: true,
   },
   {
