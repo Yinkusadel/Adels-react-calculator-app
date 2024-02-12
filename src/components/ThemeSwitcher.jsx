@@ -25,8 +25,8 @@ const ThemeSwitcher = () => {
     <div class="ml-2 flex h-12 w-1/5 flex-col items-center">
       <form name="themeForm">
         <div class="flex h-6 w-16 items-center justify-between">
-          {labelInput.map((label) => (
-            <Label key={label.id} value={label.value} htmlFor={label.id} />
+          {labelInput.map(({ id, value }) => (
+            <Label key={id} value={value} htmlFor={id} />
           ))}
         </div>
         <div class="flex h-6 w-16 items-center justify-between rounded-lg bg-themeOne-20 ">
