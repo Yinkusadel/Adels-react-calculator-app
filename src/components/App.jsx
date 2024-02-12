@@ -1,5 +1,5 @@
 import Header from './Header';
-import UserDisplay from './UserDisplay';
+import Display from './Display';
 import ButtonContainer from './ButtonContainer';
 
 const App = () => {
@@ -9,7 +9,7 @@ const App = () => {
         <div className=" flex min-h-screen w-[300px] items-center">
           <div className=" min-h-[90vh] w-[300px]">
             <Header />
-            <UserDisplay value={'399,981'} />
+            <Display value={'399,981'} />
             <ButtonContainer />
           </div>
         </div>
