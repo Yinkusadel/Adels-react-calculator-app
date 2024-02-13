@@ -31,6 +31,14 @@ module.exports = {
           200: 'hsl(6deg 70% 34%)',
           white: 'hsl(0deg 0% 98%)',
         },
+        themeTwo: {
+          30: 'hsl(25deg 98% 40%)',
+          40: 'hsl(26deg 96% 60%)',
+        },
+        themeThree: {
+          30: 'hsl(176deg 100% 44%)',
+          40: 'hsl(177deg 92% 70%)',
+        },
       },
       backgroundImage: {
         headerimage: "url('/mobile-blue-bg.png')",
