@@ -22,8 +22,8 @@ const CalcButtons = () => {
 
 const ButtonContainer = () => {
   return (
-    <div class=" h-[65vh]">
-      <div class=" mt-5 w-[300px] rounded-lg bg-themeOne-70 p-5 ">
+    <div class="h-[65vh]">
+      <div class="mt-5 w-[300px] rounded-lg bg-themeOne-70 p-5 md:w-[500px]">
         <CalcButtons />
       </div>
     </div>
