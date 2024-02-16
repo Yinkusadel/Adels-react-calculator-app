@@ -22,9 +22,9 @@ const labelInput = [
 
 const ThemeSwitcher = () => {
   return (
-    <div class="ml-2 flex h-12 w-1/5 flex-col items-center">
-      <form name="themeForm">
-        <div class="flex h-6 w-16 items-center justify-between">
+    <div class="ml-2 flex h-12 w-1/5 flex-col items-end">
+      <form name="themeForm w-1/5">
+        <div class="flex h-6 w-16 items-center justify-between md:text-base ">
           {labelInput.map(({ id, value }) => (
             <Label key={id} value={value} htmlFor={id} />
           ))}
