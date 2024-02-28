@@ -1,18 +1,22 @@
 import Button from './Button';
 
-const CalcButtons = () => {
+const CalcButtons = ({ onButtonClick }) => {
   const buttonValue = [
     ['7', '8', '9', 'DEL'],
     ['4', '5', '6', '+'],
     ['1', '2', '3', '-'],
-    ['.', '0', '/', 'x'],
+    ['.', '0', '/', '*'],
     ['RESET', '='],
   ];
 
-  const MapButton = buttonValue.map((row) => (
-    <div className="mb-2 flex items-center justify-between">
-      {row.map((buttonValue) => (
-        <Button value={buttonValue} />
+  const handleButtonClick = (value) => {
+    onButtonClick(value);
+  };
+
+  const MapButton = buttonValue.map((row, rowIndex) => (
+    <div key={rowIndex} className="mb-2 flex items-center justify-between">
+      {row.map((buttonValue, index) => (
+        <Button key={index} value={buttonValue} onClick={() => handleButtonClick(buttonValue)} />
       ))}
     </div>
   ));
@@ -20,11 +24,11 @@ const CalcButtons = () => {
   return <>{MapButton}</>;
 };
 
-const ButtonContainer = () => {
+const ButtonContainer = ({ onButtonClick }) => {
   return (
-    <div class="h-[65vh]">
-      <div class="mt-5 w-[300px] rounded-lg bg-themeOne-70 p-5 md:w-[500px]">
-        <CalcButtons />
+    <div className="h-[65vh]">
+      <div className="mt-5 w-[300px] rounded-lg bg-themeOne-70 p-5 md:w-[500px]">
+        <CalcButtons onButtonClick={onButtonClick} />
       </div>
     </div>
   );
