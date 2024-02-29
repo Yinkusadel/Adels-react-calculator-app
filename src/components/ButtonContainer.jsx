@@ -26,8 +26,8 @@ const CalcButtons = ({ onButtonClick }) => {
 
 const ButtonContainer = ({ onButtonClick }) => {
   return (
-    <div className="h-[65vh]">
-      <div className="mt-5 w-[300px] rounded-lg bg-themeOne-70 p-5 ">
+    <div className="h-[52vh]">
+      <div className="mt-3 w-[600px] rounded-lg bg-themeOne-70 p-5 ">
         <CalcButtons onButtonClick={onButtonClick} />
       </div>
     </div>

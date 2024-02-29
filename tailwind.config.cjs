@@ -40,6 +40,13 @@ module.exports = {
           30: 'hsl(176deg 100% 44%)',
           40: 'hsl(177deg 92% 70%)',
         },
+        socialMediaFill: {
+          1: '#1da1e2',
+          2: '#0072b1',
+          3: '#10eb23',
+          4: '#3726ab',
+          5: '#f70713',
+        },
       },
       backgroundImage: {
         headerimage: "url('/mobile-blue-bg.png')",
