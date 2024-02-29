@@ -6,6 +6,7 @@ module.exports = {
     extend: {
       fontFamily: {
         leagueSpartan: ['League Spartan', ...defaultTheme.fontFamily.sans],
+        Lexend: ['Lexend', ...defaultTheme.fontFamily.sans],
       },
       colors: {
         themeOne: {
