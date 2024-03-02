@@ -1,10 +1,46 @@
+import { useState, useEffect } from 'react';
+
 const QuotePage = () => {
+  const [quote, setQuote] = useState('');
+  const [error, setError] = useState(null);
+
+  useEffect(() => {
+    const category = 'happiness';
+    const apiKey = '7zgpTKjAtUyiqNA2m0qzhA==35Yxa6v2sOTTNvVK';
+    const apiUrl = `https://api.api-ninjas.com/v1/quotes?category=${category}`;
+
+    if (quote === '') {
+      fetch(apiUrl, {
+        method: 'GET',
+        headers: {
+          'X-Api-Key': apiKey,
+          'Content-Type': 'application/json',
+        },
+      })
+        .then((response) => {
+          if (!response.ok) {
+            throw new Error('Failed to fetch data');
+          }
+          return response.json();
+        })
+        .then((data) => {
+          if (data && data.length > 0) {
+            setQuote(data[0].quote);
+          }
+        })
+        .catch((error) => {
+          setError(error);
+        });
+    }
+  });
+
+  if (error) {
+    return <div>Error: {error.message}</div>;
+  }
+
   return (
-    <div class="flex h-64 items-end justify-center">
-      <p class="w-9/12 text-3xl">
-        Mathematics is not about numbers, equations, computations, or algorithms it is about
-        understanding . -William Paul Thurston
-      </p>
+    <div className="flex h-64 items-end justify-center">
+      <p className="w-9/12 text-3xl">{quote !== '' ? quote : 'Loading quote...'}</p>
     </div>
   );
 };
