@@ -13,7 +13,7 @@ const DefaultPageContent = () => (
     <p className="my-10">
       calculator app, designed to simplify your mathematical tasks effortlessly. With an intuitive
       interface and advanced functionality. click here to visit{' '}
-      <Link className="text-blue-300 underline" to="/CalculatorPage">
+      <Link className="text-blue-300 underline" to="/calculator">
         Calculator{' '}
       </Link>
     </p>
@@ -33,19 +33,19 @@ const App = () => {
               </li>
               <li className="mx-1 border-r-2 border-solid border-black"></li>
               <li className="text-blue-500 underline hover:text-black ">
-                <Link to="/Calculator">Calculator </Link>
+                <Link to="/calculator">Calculator </Link>
               </li>
               <li className="mx-1 border-r-2 border-solid border-black"></li>
               <li className="text-blue-500 underline hover:text-black ">
-                <Link to="/Quote">Quote </Link>
+                <Link to="/quote">Quote </Link>
               </li>
             </ul>
           </nav>
         </div>
         <Routes>
           <Route path="/" element={<DefaultPageContent />} />
-          <Route path="/Quote" element={<Quote />} />
-          <Route path="/Calculator" element={<Calculator />} />
+          <Route path="/quote" element={<Quote />} />
+          <Route path="/calculator" element={<Calculator />} />
         </Routes>
       </div>
       <footer className="flex h-[5vh] justify-center bg-gray-300">
