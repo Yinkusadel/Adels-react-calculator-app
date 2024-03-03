@@ -1,6 +1,5 @@
-import React, { useState } from 'react';
+import { useState } from 'react';
 
-import Header from './Header';
 import Display from './Display';
 import ButtonContainer from './ButtonContainer';
 import calculate from '../logic/calculate';
@@ -19,17 +18,14 @@ const Calculator = () => {
   };
 
   return (
-    <>
-      <div className="">
-        <div className="">
-          <div className="">
-            <Header />
-            <Display value={calcObject.displayValue} />
-            <ButtonContainer onButtonClick={handleButtonClick} />
-          </div>
+    <div>
+      <div>
+        <div>
+          <Display value={calcObject.displayValue} />
+          <ButtonContainer onButtonClick={handleButtonClick} />
         </div>
       </div>
-    </>
+    </div>
   );
 };
 

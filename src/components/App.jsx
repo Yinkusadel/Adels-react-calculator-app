@@ -1,20 +1,21 @@
-import React from 'react';
 import { Link, Route, Routes } from 'react-router-dom';
-import QuotePage from '../routerpages/QuotePage';
-import CalculatorPage from '../routerpages/CalculatorPage';
+import Quote from '../routerpages/QuotePage';
+import Calculator from '../routerpages/CalculatorPage';
 
 const DefaultPageContent = () => (
   <div className="font-semibold">
     <p className="text-3xl">Welcome to our page!</p>
     <p className="my-10">
-      Hey there. I'm Ibrohim. I'm a software developer. I can help you build a product, feature, or
-      website. Look through some of my work and experience! If you like what you see and have a
-      project you need coded, don't hesitate to contact me.
+      Hey there. I&apos;m Ibrohim. I&apos;m a software developer. I can help you build a product,
+      feature, or website. Look through some of my work and experience! If you like what you see and
+      have a project you need coded, don&apos;t hesitate to contact me.
     </p>
     <p className="my-10">
-      Hey there. I'm Ibrohim. I'm a software developer. I can help you build a product, feature, or
-      website. Look through some of my work and experience! If you like what you see and have a
-      project you need coded, don't hesitate to contact me.
+      calculator app, designed to simplify your mathematical tasks effortlessly. With an intuitive
+      interface and advanced functionality. click here to visit{' '}
+      <Link className="text-blue-300 underline" to="/CalculatorPage">
+        Calculator{' '}
+      </Link>
     </p>
   </div>
 );
@@ -32,19 +33,19 @@ const App = () => {
               </li>
               <li className="mx-1 border-r-2 border-solid border-black"></li>
               <li className="text-blue-500 underline hover:text-black ">
-                <Link to="/CalculatorPage">Calculator </Link>
+                <Link to="/Calculator">Calculator </Link>
               </li>
               <li className="mx-1 border-r-2 border-solid border-black"></li>
               <li className="text-blue-500 underline hover:text-black ">
-                <Link to="/QuotePage">Quote </Link>
+                <Link to="/Quote">Quote </Link>
               </li>
             </ul>
           </nav>
         </div>
         <Routes>
           <Route path="/" element={<DefaultPageContent />} />
-          <Route path="/QuotePage" element={<QuotePage />} />
-          <Route path="/CalculatorPage" element={<CalculatorPage />} />
+          <Route path="/Quote" element={<Quote />} />
+          <Route path="/Calculator" element={<Calculator />} />
         </Routes>
       </div>
       <footer className="flex h-[5vh] justify-center bg-gray-300">
@@ -54,11 +55,11 @@ const App = () => {
               href="https://twitter.com/HashiraAdel"
               title="twitter link icon"
               target="_blank"
-              rel="noopener"
+              rel="noreferrer"
             >
               <span className="hidden">twitter</span>
               <svg
-                class="hover:fill-socialMediaFill-1"
+                className="hover:fill-socialMediaFill-1"
                 aria-label="twitter"
                 width="21"
                 height="20"
@@ -75,11 +76,11 @@ const App = () => {
               href="https://www.linkedin.com/in/adeleye-olayinka/"
               title="linkedin link icon"
               target="_blank"
-              rel="noopener"
+              rel="noreferrer"
             >
               <span className="hidden">linkedin</span>
               <svg
-                class="hover:fill-socialMediaFill-2"
+                className="hover:fill-socialMediaFill-2"
                 aria-label="linkedin"
                 width="21"
                 height="20"
@@ -94,10 +95,10 @@ const App = () => {
             </a>
           </li>
           <li className="flex items-center p-2">
-            <a href="link address" title="medium link icon" target="_blank" rel="noopener">
+            <a href="link address" title="medium link icon" target="_blank" rel="noreferrer">
               <span className="hidden">medium</span>
               <svg
-                class="hover:fill-socialMediaFill-3"
+                className="hover:fill-socialMediaFill-3"
                 aria-label="medium"
                 width="21"
                 height="16"
@@ -114,11 +115,11 @@ const App = () => {
               href="https://github.com/yinkusadel"
               title="github link icon"
               target="_blank"
-              rel="noopener"
+              rel="noreferrer"
             >
               <span className="hidden">github</span>
               <svg
-                class="hover:fill-socialMediaFill-4"
+                className="hover:fill-socialMediaFill-4"
                 aria-label="github"
                 width="19"
                 height="20"
@@ -131,10 +132,10 @@ const App = () => {
             </a>
           </li>
           <li className="flex items-center p-2">
-            <a href="link address" title="angelists link icon" target="_blank" rel="noopener">
+            <a href="link address" title="angelists link icon" target="_blank" rel="noreferrer">
               <span className="hidden">angelists</span>
               <svg
-                class="hover:fill-socialMediaFill-5"
+                className="hover:fill-socialMediaFill-5"
                 aria-label="angelists"
                 width="15"
                 height="20"

@@ -6,7 +6,7 @@ const QuotePage = () => {
 
   useEffect(() => {
     const category = 'happiness';
-    const apiKey = '7zgpTKjAtUyiqNA2m0qzhA==35Yxa6v2sOTTNvVK';
+    const apiKey = import.meta.env.VITE_NINJAS_QUOTES_API_KEY;
     const apiUrl = `https://api.api-ninjas.com/v1/quotes?category=${category}`;
 
     if (quote === '') {
@@ -35,7 +35,7 @@ const QuotePage = () => {
   });
 
   if (error) {
-    return <div>Error: {error.message}</div>;
+    return <div>An error occurred. Please try again later.</div>;
   }
 
   return (
