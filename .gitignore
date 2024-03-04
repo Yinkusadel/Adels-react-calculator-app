@@ -24,4 +24,4 @@ dist-ssr
 *.sw?
 
 accessibility_report.md
-
+.env

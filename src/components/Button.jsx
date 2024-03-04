@@ -1,7 +1,7 @@
 const Button = ({ value, onClick }) => {
   const style =
     value === 'DEL'
-      ? 'w-1/5 bg-themeOne-120 text-2xl md:text-3xl font-bold text-themeOne-white shadow-darkblue hover:bg-themeOne-130'
+      ? 'w-1/5 bg-themeOne-120 lg:text-2xl text-base  font-bold text-themeOne-white shadow-darkblue hover:bg-themeOne-130'
       : value === 'RESET'
         ? 'w-[48%] bg-themeOne-150 text-2xl md:text-3xl font-bold text-themeOne-white shadow-darkblue hover:bg-themeOne-160'
         : value === '='
