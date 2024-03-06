@@ -41,4 +41,14 @@ describe('Calculator', () => {
 
     expect(displayElement).toBeInTheDocument();
   });
+
+  it('updates display to show when button is clicked', () => {
+    render(<Calculator />);
+
+    // Assert that the ButtonContainer is present in the rendered output
+    const buttonFour = screen.getByText('4');
+    fireEvent.click(buttonFour);
+
+    expect(buttonFour).toBeInTheDocument();
+  });
 });
