@@ -6,7 +6,8 @@ const QuotePage = () => {
 
   useEffect(() => {
     const category = 'happiness';
-    const apiKey = import.meta.env.VITE_NINJAS_QUOTES_API_KEY;
+    // const apiKey = import.meta.env.VITE_NINJAS_QUOTES_API_KEY;
+    const apiKey = process.env.VITE_NINJAS_QUOTES_API_KEY;
     const apiUrl = `https://api.api-ninjas.com/v1/quotes?category=${category}`;
 
     if (quote === '') {
